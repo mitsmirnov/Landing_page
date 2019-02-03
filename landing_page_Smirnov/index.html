@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Landing page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <img src="img/logo.png" alt="logo">
+        <h1>Landing page</h1>
+    </div>
+    <div class="nav">
+        <a href="#box_text">Общая информация</a>
+        <a href="#box_photo">Хобби</a>
+        <a href="#box_form">Форма обратной связи</a>
+    </div>
+    <div id="content">
+        <div id="center">
+            <img src="img/photo.jpg" alt="photo">
+
+            <div id="box_text">
+                <ul>
+                    <li>ФИО: Смирнов Дмитрий Юрьевич</li>
+                    <li>Дата рождения: 19.08.1988</li>
+                    <li>Место жительство: г. Севастополь.</li>
+                    <li>Прошёл обучение в Национальном Открытом Университете "ИНТУИТ" по курсу "Введение в HTML" в объёме 72 часов.</li>
+                    <li>На образовательном IT-портале GeekBrains окончил курс "Основы программирования. Онлайн-курс" и курс "Интенсив "Основы веб-разработки". Создание персонального сайта".</li>
+                    <li>Знаком с сновами работы: в CMS Wordpress, на локальном веб сервере Open Server Panel, использования системы контроля версий Git, проведение web тестирования.</li>
+                </ul>
+            </div>
+
+            <div id="box_photo">
+                <div class="container">
+                    <img src="img/photo-2.jpg">
+                    <div1>
+                        <p>
+                            Фридайвинг - подводное плавание на задержке дыхания. Не нужно никакого тяжелого снаряжения - только маска, трубка и вперёд наслаждаться красотой подводного мира.
+                        </p>
+                    </div1>
+                </div>
+                <div class="container">
+                    <img src="img/photo-3.jpg">
+                    <div2>
+                        <p>
+                            Подводные фото и видео съёмка. Как продолжение предыдущего увлечения, чтобы делиться красочными впечат-лениями об обитателях морей и океанов.
+                        </p>
+                    </div2>
+                </div>
+                <div class="container">
+                    <img src="img/photo-4.jpg" alt="photo">
+                    <div3>
+                        <p>
+                            Каякинг - прекрасная возмо-жность исследовать самые удалёные и труднодоступные уголки крымского побережья.
+                        </p>
+                    </div3>
+                </div>
+                <div class="container">
+                    <img src="img/photo-5.jpg" alt="photo">
+                    <div4>
+                        <p>
+                            Путешествия расширяют твоё представление о мире, дают по-настоящему почувствовать его многогранность.
+                        </p>
+                    </div4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="box_form">
+        <div class="container-2">
+            <form id="contactForm" action="handler.php" method="post">
+                <h2>Форма обратной связи</h2>
+                <div class="field-block">
+                    <label for="name">Ваше имя:</label>
+                    <input id="name" class="field" name="name" required type="text" placeholder="Иванов Иван Иванович">
+                </div>
+                <div class="field-block">
+                    <label for="email">Ваш E-mail:</label>
+                    <input id="email" class="field" name="email" required type="email" placeholder="ivanov@email.com">
+                </div>
+                <div class="field-block">
+                    <label for="phone">Ваш телефон:</label>
+                    <input id="phone" class="field" name="phone" required type="text" placeholder="+7 (800) 000-00-00">
+                </div>
+                <div class="field-block">
+                    <label for="message">Текст сообщения:</label>
+                    <textarea id="message" class="field" required name="message" rows="4"></textarea>
+                </div>
+                <div class="field-block">
+                    <input id="check" name="check" checked type="checkbox">
+                    <span class="check-text">Я даю своё согласие на обработку моих персональных данных.</span>
+                </div>
+                <button id="button" class="button" type="submit">Отправить</button>
+
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        <a href="https://www.instagram.com/dmitrytavr/?hl=ru"><i class="fab fa-instagram"></i></a>
+        <a href="https://vk.com/id18525965"><i class="fab fa-vk"></i></a>
+        <a href="https://www.facebook.com/dmitry.smirnov.5648"><i class="fab fa-facebook-f"></i></a>
+        <br>Copyright &copy;
+
+        <script type="text/javascript">
+            document.write(new Date().getFullYear());
+
+        </script>
+        SDU
+    </div>
+</body>
+
+</html>
